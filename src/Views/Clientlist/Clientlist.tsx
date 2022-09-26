@@ -1,71 +1,54 @@
-import { Wrapper } from "./Styles";
-// import Carousel from "react-bootstrap/Carousel";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Wrapper } from "./Styles";
 
 export const ClientList = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 9,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
   };
   return (
-    // <div
-    //   style={{
-    //     width: "100%",
-    //     backgroundColor: "#F7F6FB",
-    //     display: "flex",
-    //     flexDirection: "row",
-    //   }}
-    // >
-    //   {<Carousel
-    //     style={{ width: "100vw" }}
-    //     fade
-    //     controls={false}
-    //     indicators={false}
-    //     interval={2000}
-    //   >
-    //    <Wrapper>
-    <div style={{ width: "100vw", display: "flex", flexDirection: "row" }}>
+    <Wrapper>
       <Slider {...settings}>
         <div>
-          <img src="/client-1.png" />
+          <img src="/client-1.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-2.png" />
+          <img src="/client-2.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-3.png" />
+          <img src="/client-3.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-4.png" />
+          <img src="/client-4.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-5.png" />
+          <img src="/client-5.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-6.png" />
+          <img src="/client-6.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-7.png" />
+          <img src="/client-7.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-8.png" />
+          <img src="/client-8.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-9.png" />
+          <img src="/client-9.png" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-10.png" />
+          <img src="/client-10.png" width={160} height={80} />
         </div>
-        {/* </Wrapper> */}
-        {/* </Carousel> */}
       </Slider>
-    </div>
+    </Wrapper>
   );
 };

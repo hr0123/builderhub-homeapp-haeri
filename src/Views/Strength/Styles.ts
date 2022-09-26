@@ -2,23 +2,23 @@ import { Chip, Container, Grid, styled, Typography } from "@mui/material";
 
 export const Wrapper = styled(Grid)(() => ({
   width: "100%",
-  // padding: "120px",
-  // display: "flex",
-  // flexDirection: "column",
-  // justifyContent: "center",
-  // alignItems: "center",
-  backgroundColor: "#F7F6FB",
+  display: "flex",
+  flexDirection: "column",
+  // justifyContent: "space-between",
+  alignItems: "center",
+  backgroundColor: "#FAFAFC",
+  paddingBottom: "120px",
 }));
 
 export const RowWrapper = styled(Grid)(() => ({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-between",
+  justifyContent: "space-around",
   alignItems: "center",
+  marginTop: "120px",
 }));
 
-export const ColumnWrapper = styled(Grid)(() => ({
-  width: "100%",
+export const Contents = styled(Grid)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",

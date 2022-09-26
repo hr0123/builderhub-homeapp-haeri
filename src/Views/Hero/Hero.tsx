@@ -9,12 +9,13 @@ import {
 } from "./Styles";
 import { BuilderhubSymbol } from "../../Components/Logo";
 import { HeroButton } from "../../Components/Button/HeroButton";
+import { HeroCarousel } from "./HeroCarousel";
 
 export const Hero = () => {
   return (
     <Background>
       <Wrap>
-        <BackImage src="/Hero01.png" />
+        <HeroCarousel />
         <LeftWrap>
           <ContentWrap>
             <BuilderhubSymbol />
