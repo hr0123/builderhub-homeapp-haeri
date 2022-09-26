@@ -1,4 +1,4 @@
-import { Chip, Container, Grid, styled, Typography } from "@mui/material";
+import { Chip, Grid, styled, Typography } from "@mui/material";
 
 export const Wrapper = styled(Grid)(() => ({
   width: "100%",
@@ -31,4 +31,11 @@ export const CustomizedChip = styled(Chip)(() => ({
   fontWeight: "700",
   color: "#664AE3",
   backgroundColor: "rgba(102, 74, 227, 0.15)",
+}));
+
+export const MainTypography = styled(Typography)(() => ({
+  fontWeight: 700,
+  fontSize: "28px",
+  margin: "20px 0",
+  color: "#3B3748",
 }));

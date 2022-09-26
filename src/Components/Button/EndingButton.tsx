@@ -3,15 +3,16 @@ import Button from "@mui/material/Button";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { createTheme, styled } from "@mui/material/styles";
 import { useRouter } from "next/router";
+import { CustomTheme } from "../../Theme/CustomTheme";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#664AE3",
-      dark: "#47339e",
-    },
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: "#664AE3",
+//       dark: "#47339e",
+//     },
+//   },
+// });
 
 const CustomizedButton = styled(Button)(() => ({
   width: "450px",
@@ -19,9 +20,11 @@ const CustomizedButton = styled(Button)(() => ({
   fontWeight: "700",
   fontSize: "36px",
   color: "white",
-  backgroundColor: theme.palette.primary.main,
+  // backgroundColor: theme.palette.primary.main,
+  backgroundColor: CustomTheme.colors.background.main,
   "&:hover": {
-    backgroundColor: theme.palette.primary.dark,
+    // backgroundColor: theme.palette.primary.dark,
+    backgroundColor: CustomTheme.colors.background.dark,
   },
   borderRadius: "50px",
   border: "none",

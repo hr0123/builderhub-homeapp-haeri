@@ -1,4 +1,5 @@
 import { styled } from "@mui/material";
+// import { CustomTheme } from "../../Theme/CustomTheme";
 
 export const Wrap = styled("div")(() => ({
   width: "100%",
@@ -12,10 +13,11 @@ export const Wrap = styled("div")(() => ({
   alignItems: "center",
 }));
 
-export const NavBarButton = styled("div")(() => ({
+export const NavBarButton = styled("div")(({ theme }) => ({
   fontSize: "16px",
   fontWeight: "700",
-  color: "white",
+  // color: "white",
+  color: theme.fontPalette.white,
   cursor: "pointer",
   // "&:hover": {
   //   fontSize: "16.5px",

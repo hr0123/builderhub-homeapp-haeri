@@ -1,31 +1,23 @@
 import { styled } from "@mui/material";
 
-export const Background = styled("div")(() => ({
-  width: "100%",
+export const Wrapper = styled("div")(() => ({
+  width: "100vw",
+  height: "700px",
+  padding: "40px",
   backgroundColor: "#FAFAFC",
-  display: "grid",
-  placeContent: "center",
 }));
-
-export const Wrap = styled("div")(() => ({
-  width: "1160px",
+export const BoxWrapper = styled("div")(() => ({
+  // width: "1160px",
+  width: "100%",
   height: "540px",
-  margin: "40px 60px 40px 60px",
+  // height: "100%",
   borderRadius: "40px",
   boxShadow: "0px 6px 8px 2px rgba(53, 50, 62, 0.08)",
   position: "relative",
   zIndex: "1",
 }));
 
-export const BackImage = styled("img")(() => ({
-  width: "100%",
-  height: "100%",
-  position: "absolute",
-  zIndex: "2",
-  borderRadius: "40px",
-}));
-
-export const LeftWrap = styled("div")(() => ({
+export const LeftWrapper = styled("div")(() => ({
   position: "absolute",
   zIndex: "3",
   height: "360px",
@@ -37,21 +29,10 @@ export const LeftWrap = styled("div")(() => ({
   alignItems: "flex-start",
 }));
 
-export const ContentWrap = styled("div")(() => ({
+export const Contents = styled("div")(() => ({
   // height: "",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-around",
   marginBottom: "100px",
-}));
-
-export const SubTitle = styled("div")(() => ({
-  fontSize: "24px",
-  marginTop: "20px",
-  marginBottom: "20px",
-}));
-
-export const Title = styled("div")(() => ({
-  fontSize: "36px",
-  fontWeight: "700",
 }));

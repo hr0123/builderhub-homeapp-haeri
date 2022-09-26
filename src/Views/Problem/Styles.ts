@@ -21,25 +21,12 @@ export const ContentWrap = styled("div")(() => ({
   padding: "177px 0 217px 0",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
   alignItems: "center",
 }));
 
-export const Subtitle = styled("div")(() => ({
-  fontSize: "24px",
-  fontWeight: "700",
-  color: "#8D879B",
-}));
-
-export const Title = styled("div")(() => ({
+export const ResponsiveTitle = styled("div")(() => ({
   fontSize: "32px",
   fontWeight: "700",
   color: "#664AE3",
-  marginBottom: "30px",
-}));
-
-export const Content = styled("div")(() => ({
-  fontSize: "20px",
-  fontWeight: "400",
-  color: "#3B3748",
+  margin: "5px 0px 30px 0px",
 }));

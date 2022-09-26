@@ -17,6 +17,8 @@ export const StyledPaper = styled(Paper)(() => ({
   boxShadow: "0px 12px 30px 5px rgba(235,235,255,1)",
 }));
 
-// export const StyeldTypography = styled(Typography)(()=>({
-
-// }))
+export const ColoredTypography = styled(Typography)(() => ({
+  fontWeight: "700",
+  color: "#664AE3",
+  textAlign: "center",
+}));
