@@ -6,7 +6,6 @@ export const Wrapper = styled(Grid)(() => ({
   flexDirection: "column",
   // justifyContent: "space-between",
   alignItems: "center",
-  backgroundColor: "#FAFAFC",
   paddingBottom: "120px",
 }));
 
@@ -24,18 +23,11 @@ export const Contents = styled(Grid)(() => ({
   justifyContent: "space-between",
 }));
 
-export const CustomizedChip = styled(Chip)(() => ({
+export const CustomizedChip = styled(Chip)(({ theme }) => ({
   height: "36px",
   padding: "4px 15px 4px 15px",
   fontSize: "20px",
   fontWeight: "700",
-  color: "#664AE3",
-  backgroundColor: "rgba(102, 74, 227, 0.15)",
-}));
-
-export const MainTypography = styled(Typography)(() => ({
-  fontWeight: 700,
-  fontSize: "28px",
-  margin: "20px 0",
-  color: "#3B3748",
+  color: theme.palette.text.secondary,
+  backgroundColor: theme.palette.secondary.main,
 }));

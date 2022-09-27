@@ -1,27 +1,27 @@
 import { Typography } from "@mui/material";
-import { BackImage, ContentWrap, ResponsiveTitle, Wrap } from "./Styles";
+import { theme } from "../../Theme/CustomTheme";
+import { BackImage, ContentWrap, Wrapper } from "./Styles";
 
 export const Problem = () => {
   return (
-    <Wrap>
+    <Wrapper>
       <BackImage src="/Problem.png" />
       <ContentWrap>
-        <Typography variant="h5" sx={{ fontWeight: "700", color: "#8D879B" }}>
+        <Typography variant="title24" sx={{ color: theme.palette.info.main }}>
           분명 예산 안에 된다고 했는데,
         </Typography>
-        <ResponsiveTitle>또 공사 비용이 바뀌었다면?</ResponsiveTitle>
-        {/* <Typography
-        variant="h4"
-        sx={{ fontWeight: "700", color: "#664AE3", m: "5px 0px 30px 0px" }}
+        <Typography
+          variant="title32"
+          sx={{ color: theme.palette.text.secondary, m: "4px 0 20px 0" }}
         >
           또 공사 비용이 바뀌었다면?
-        </Typography> */}
-        <Typography variant="h6" sx={{ color: "#3B3748", textAlign: "center" }}>
+        </Typography>
+        <Typography variant="body20" sx={{ textAlign: "center" }}>
           공사에 필요한 자재가 무엇이고, 자재별 수량이
           <br />
           정확하게 산출되었는지부터 확인해 보세요.
         </Typography>
       </ContentWrap>
-    </Wrap>
+    </Wrapper>
   );
 };

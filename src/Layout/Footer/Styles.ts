@@ -9,20 +9,12 @@ export const Wrap = styled("div")(() => ({
   backgroundColor: "#664AE3",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignItems: "center",
-}));
-
-export const Content = styled("div")(() => ({
-  height: "5px",
-  color: "white",
-  fontSize: "12px",
 }));
 
 export const ButtonWrap = styled("div")(() => ({
   width: "230px",
-  marginTop: "30px",
-  marginBottom: "10px",
   color: "white",
   fontSize: "16px",
   fontWeight: "700",
@@ -38,7 +30,6 @@ export const FooterButton = styled("div")(() => ({
 
 export const IconWrap = styled("div")(() => ({
   width: "215px",
-  marginBottom: "10px",
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",

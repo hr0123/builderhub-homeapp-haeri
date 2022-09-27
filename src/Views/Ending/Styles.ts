@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 
-export const Wrapper = styled("div")(() => ({
+export const Wrapper = styled("div")(({ theme }) => ({
   width: "100%",
   height: "1062px",
   padding: "140px 0 140px 0",
@@ -8,5 +8,5 @@ export const Wrapper = styled("div")(() => ({
   flexDirection: "column",
   justifyContent: "space-between",
   alignItems: "center",
-  backgroundColor: "#F4F3FD",
+  backgroundColor: theme.palette.success.main,
 }));

@@ -4,8 +4,8 @@ export const Wrapper = styled("div")(() => ({
   width: "100vw",
   height: "700px",
   padding: "40px",
-  backgroundColor: "#FAFAFC",
 }));
+
 export const BoxWrapper = styled("div")(() => ({
   // width: "1160px",
   width: "100%",
@@ -33,6 +33,6 @@ export const Contents = styled("div")(() => ({
   // height: "",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   marginBottom: "100px",
 }));

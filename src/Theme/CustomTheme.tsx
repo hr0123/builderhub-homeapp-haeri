@@ -1,15 +1,73 @@
-import { createTheme } from "@mui/material";
+import { createTheme, ThemeOptions } from "@mui/material/styles";
 
-const bgPalette = {
-  primary: "#664AE3",
-  secondary: "#F7F6FB",
-  dark: "#3E3D46",
-};
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    title36: React.CSSProperties;
+    title32: React.CSSProperties;
+    title28: React.CSSProperties;
+    title24: React.CSSProperties;
+    title20: React.CSSProperties;
+    title15: React.CSSProperties;
+    title12: React.CSSProperties;
+    body28: React.CSSProperties;
+    body24: React.CSSProperties;
+    body20: React.CSSProperties;
+    body12: React.CSSProperties;
+  }
+  interface TypographyVariantsOptions {
+    title36: React.CSSProperties;
+    title32: React.CSSProperties;
+    title28: React.CSSProperties;
+    title24: React.CSSProperties;
+    title20: React.CSSProperties;
+    title15: React.CSSProperties;
+    title12: React.CSSProperties;
+    body28: React.CSSProperties;
+    body24: React.CSSProperties;
+    body20: React.CSSProperties;
+    body12: React.CSSProperties;
+  }
+}
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    title36: true;
+    title32: true;
+    title28: true;
+    title24: true;
+    title20: true;
+    title15: true;
+    title12: true;
+    body28: true;
+    body24: true;
+    body20: true;
+    body12: true;
+  }
+}
 
-const fontPalette = {
-  white: "#FFFFFF",
-  primary: "#664AE3",
-  seondary: "#3B3748",
+const customPalette = {
+  background: {
+    default: "#F7F6FB",
+  },
+  success: {
+    main: "#3E3D46",
+  },
+  primary: {
+    main: "#664AE3",
+  },
+  action: {
+    hover: "#47339e",
+  },
+  secondary: {
+    main: "#e2dcf7",
+  },
+  text: {
+    primary: "#3B3748",
+    secondary: "#664AE3",
+    disabled: "#FFFFFF",
+  },
+  info: {
+    main: "#8D879B",
+  },
 };
 
 const customTypography = {
@@ -43,6 +101,11 @@ const customTypography = {
     fontSize: "15px",
     fontWeight: "700",
   },
+  title12: {
+    fontStyle: "normal",
+    fontSize: "12px",
+    fontWeight: "700",
+  },
   body28: {
     fontStyle: "normal",
     fontSize: "28px",
@@ -65,75 +128,11 @@ const customTypography = {
   },
 };
 
-export const customTheme = createTheme({
-  bgPalette: { ...bgPalette },
-  fontPalette: { ...fontPalette },
+const options: ThemeOptions = {
+  palette: { ...customPalette },
   typography: { ...customTypography },
-});
+};
 
-// export const theme = {
-//   colors: {
-//     background: {
-//       layout: "#664AE3",
-//       main: "#FAFAFC",
-//       dark: "#47339e",
-//     },
-//     font: {
-//       primary: "#664AE3",
-//       seondary: "#3B3748",
-//       white: "#FFFFFF",
-//     },
-//   },
-//   customTypography: {
-//     title36: {
-//       fontStyle: "normal",
-//       fontSize: "36px",
-//       fontWeight: "700",
-//     },
-//     title32: {
-//       fontStyle: "normal",
-//       fontSize: "32px",
-//       fontWeight: "700",
-//     },
-//     title28: {
-//       fontStyle: "normal",
-//       fontSize: "28px",
-//       fontWeight: "700",
-//     },
-//     title24: {
-//       fontStyle: "normal",
-//       fontSize: "24px",
-//       fontWeight: "700",
-//     },
-//     title20: {
-//       fontStyle: "normal",
-//       fontSize: "20px",
-//       fontWeight: "700",
-//     },
-//     title15: {
-//       fontStyle: "normal",
-//       fontSize: "15px",
-//       fontWeight: "700",
-//     },
-//     body28: {
-//       fontStyle: "normal",
-//       fontSize: "28px",
-//       fontWeight: "400",
-//     },
-//     body24: {
-//       fontStyle: "normal",
-//       fontSize: "24px",
-//       fontWeight: "400",
-//     },
-//     body20: {
-//       fontStyle: "normal",
-//       fontSize: "20px",
-//       fontWeight: "400",
-//     },
-//     body12: {
-//       fontStyle: "normal",
-//       fontSize: "12px",
-//       fontWeight: "400",
-//     },
-//   },
-// };
+export const theme = createTheme(options);
+
+// export default theme;

@@ -14,13 +14,11 @@ export const Hero = () => {
           <LeftWrapper>
             <Contents>
               <BuilderhubSymbol />
-              <Typography variant="h5" sx={{ m: "20px 0px 20px 0px" }}>
+              <Typography variant="body24" sx={{ m: "20px 0px" }}>
                 바뀌는게 당연한 건축?
               </Typography>
-              <Typography variant="h4" sx={{ fontWeight: "700" }}>
-                빌더허브가
-                <br />확 바꿔 나갑니다.
-              </Typography>
+              <Typography variant="title36">빌더허브가</Typography>
+              <Typography variant="title36">확 바꿔 나갑니다.</Typography>
             </Contents>
             <HeroButton />
           </LeftWrapper>

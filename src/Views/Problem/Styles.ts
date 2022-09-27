@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 
-export const Wrap = styled("div")(() => ({
+export const Wrapper = styled("div")(() => ({
   width: "100%",
   height: "560px",
   position: "relative",
@@ -22,11 +22,4 @@ export const ContentWrap = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-}));
-
-export const ResponsiveTitle = styled("div")(() => ({
-  fontSize: "32px",
-  fontWeight: "700",
-  color: "#664AE3",
-  margin: "5px 0px 30px 0px",
 }));

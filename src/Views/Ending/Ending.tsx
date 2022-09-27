@@ -1,20 +1,23 @@
 import { Typography } from "@mui/material";
 import { EndingButton } from "../../Components/Button/EndingButton";
+import { theme } from "../../Theme/CustomTheme";
 import { Wrapper } from "./Styles";
 
 export const Ending = () => {
   return (
     <Wrapper>
-      <Typography variant="h4" sx={{ fontWeight: "700" }}>
-        건축,
-      </Typography>
       <Typography
-        variant="h4"
-        sx={{ fontWeight: "700", color: "#664AE3", mb: "12px" }}
+        variant="title36"
+        sx={{ color: theme.palette.text.disabled, textAlign: "center" }}
       >
+        건축,
+        <br />
         누구나 안심하고 할 수 있도록
       </Typography>
-      <Typography variant="h5" sx={{ fontWeight: "400", color: "#3B3748" }}>
+      <Typography
+        variant="body28"
+        sx={{ color: theme.palette.text.disabled, mt: "12px" }}
+      >
         빌더허브와 안심 건축을 시작해 보세요.
       </Typography>
       <img src="/Ending.png" style={{ margin: "48px 0 48px 0" }} />

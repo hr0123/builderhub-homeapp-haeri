@@ -1,22 +1,25 @@
 import { BuilderhubLogo } from "../../Components/Logo";
-import { ButtonWrap, Content, FooterButton, IconWrap, Wrap } from "./Styles";
+import { ButtonWrap, FooterButton, IconWrap, Wrap } from "./Styles";
 import {
   FooterChang,
   FooterYoutube,
   FooterLink,
 } from "../../Components/Button";
 import { useRouter } from "next/router";
+import { Typography } from "@mui/material";
 
 export const Footer = () => {
   const router = useRouter();
   return (
     <Wrap>
       <BuilderhubLogo />
-      <Content>상호명 : (주)창소프트아이앤아이</Content>
-      <Content>
+      <Typography variant="body12" sx={{ textAlign: "center" }}>
+        상호명 : (주)창소프트아이앤아이
+        <br />
         사업장소재지 : 서울특별시 강남구 테헤란로103길 8-7, 2~4F (삼성동)
-      </Content>
-      <Content>사업자등록번호: 220-87-61198 ㅣ 전화번호: 02-563-1328</Content>
+        <br />
+        사업자등록번호: 220-87-61198 ㅣ 전화번호: 02-563-1328
+      </Typography>
       <ButtonWrap>
         <FooterButton
           onClick={() =>
@@ -41,7 +44,9 @@ export const Footer = () => {
         <FooterYoutube cursor="pointer" />
         <FooterLink cursor="pointer" />
       </IconWrap>
-      <Content>ⓒ2022 Changsoft i&i. All Rights Reserved.</Content>
+      <Typography variant="body12">
+        ⓒ2022 Changsoft i&i. All Rights Reserved.
+      </Typography>
     </Wrap>
   );
 };
