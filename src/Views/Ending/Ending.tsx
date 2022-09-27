@@ -20,7 +20,7 @@ export const Ending = () => {
       >
         빌더허브와 안심 건축을 시작해 보세요.
       </Typography>
-      <img src="/Ending.png" style={{ margin: "48px 0 48px 0" }} />
+      <img src="/Ending.png" style={{ margin: "60px 0 87px 0" }} />
       <EndingButton />
     </Wrapper>
   );
