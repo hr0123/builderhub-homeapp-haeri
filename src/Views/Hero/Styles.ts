@@ -2,7 +2,6 @@ import { styled } from "@mui/material";
 
 export const Wrapper = styled("div")(() => ({
   width: "100vw",
-  height: "700px",
   padding: "40px",
 }));
 
@@ -20,7 +19,6 @@ export const BoxWrapper = styled("div")(() => ({
 export const LeftWrapper = styled("div")(() => ({
   position: "absolute",
   zIndex: "3",
-  height: "360px",
   marginTop: "94px",
   marginLeft: "148px",
   display: "flex",
@@ -30,7 +28,6 @@ export const LeftWrapper = styled("div")(() => ({
 }));
 
 export const Contents = styled("div")(() => ({
-  // height: "",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",

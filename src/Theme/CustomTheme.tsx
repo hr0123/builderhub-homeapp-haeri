@@ -63,10 +63,12 @@ const customPalette = {
   text: {
     primary: "#3B3748",
     secondary: "#664AE3",
-    disabled: "#FFFFFF",
   },
   info: {
     main: "#8D879B",
+  },
+  common: {
+    white: "#FFFFFF",
   },
 };
 

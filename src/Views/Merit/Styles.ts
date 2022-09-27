@@ -1,7 +1,13 @@
-import { Grid, Paper, styled, Typography } from "@mui/material";
+import { Container, Paper, styled } from "@mui/material";
 
-export const Wrapper = styled(Grid)(() => ({
-  width: "100%",
+export const Wrapper = styled(Container)(() => ({
+  width: "100vw",
+  height: "100vh",
+  padding: "300px 0 100px 0",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "center",
 }));
 
 export const StyledPaper = styled(Paper)(() => ({

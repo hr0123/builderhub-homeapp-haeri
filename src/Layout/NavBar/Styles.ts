@@ -15,6 +15,6 @@ export const Wrap = styled("div")(() => ({
 export const NavBarButton = styled("div")(({ theme }) => ({
   fontSize: "16px",
   fontWeight: "700",
-  color: theme.palette.text.disabled,
+  color: theme.palette.common.white,
   cursor: "pointer",
 }));

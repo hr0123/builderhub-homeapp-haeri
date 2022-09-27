@@ -1,11 +1,11 @@
 import { styled } from "@mui/material";
 
-export const Wrap = styled("div")(() => ({
+export const Wrap = styled("div")(({ theme }) => ({
   width: "100%",
   height: "434px",
   paddingTop: "72px",
   paddingBottom: "72px",
-  color: "white",
+  color: theme.palette.common.white,
   backgroundColor: "#664AE3",
   display: "flex",
   flexDirection: "column",

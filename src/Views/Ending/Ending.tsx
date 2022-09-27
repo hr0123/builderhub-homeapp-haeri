@@ -8,7 +8,7 @@ export const Ending = () => {
     <Wrapper>
       <Typography
         variant="title36"
-        sx={{ color: theme.palette.text.disabled, textAlign: "center" }}
+        sx={{ color: theme.palette.common.white, textAlign: "center" }}
       >
         건축,
         <br />
@@ -16,7 +16,7 @@ export const Ending = () => {
       </Typography>
       <Typography
         variant="body28"
-        sx={{ color: theme.palette.text.disabled, mt: "12px" }}
+        sx={{ color: theme.palette.common.white, mt: "12px" }}
       >
         빌더허브와 안심 건축을 시작해 보세요.
       </Typography>
