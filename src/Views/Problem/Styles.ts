@@ -1,4 +1,5 @@
 import { styled } from "@mui/material";
+import { keyframes } from "styled-components";
 
 export const Wrapper = styled("div")(() => ({
   width: "100%",
@@ -8,4 +9,6 @@ export const Wrapper = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  transitionProperty: "revert",
+  transitionDuration: "3s",
 }));

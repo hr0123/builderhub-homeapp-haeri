@@ -1,8 +1,16 @@
-import { Typography } from "@mui/material";
+import { Fade, Slide, Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
 import { Wrapper, TitleRow } from "./Styles";
+// import React, { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export const Solution = () => {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // });
   return (
     <Wrapper>
       <TitleRow>

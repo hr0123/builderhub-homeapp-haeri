@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Fade, Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
 import { Wrapper } from "./Styles";
 
