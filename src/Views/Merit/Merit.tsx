@@ -9,6 +9,7 @@ export const Merit = () => {
     <Wrapper>
       <MeritMain />
       <div
+        data-aos="fade-up"
         style={{
           width: "100%",
           display: "flex",

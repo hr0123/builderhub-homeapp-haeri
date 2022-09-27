@@ -1,10 +1,12 @@
-import { Fade, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
+import { Questionmark } from "./questionmark";
 import { Wrapper } from "./Styles";
 
 export const Problem = () => {
   return (
-    <Wrapper>
+    <Wrapper data-aos="fade-up">
+      <Questionmark />
       <Typography variant="title24" sx={{ color: theme.palette.info.main }}>
         분명 예산 안에 된다고 했는데,
       </Typography>

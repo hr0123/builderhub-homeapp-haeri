@@ -4,7 +4,7 @@ import { Wrapper, RowWrapper, Contents, CustomizedChip } from "./Styles";
 export const Strength = () => {
   return (
     <Wrapper>
-      <RowWrapper>
+      <RowWrapper data-aos="fade-up">
         <Contents>
           <CustomizedChip
             label="BIM 기반 수량 산출"
@@ -25,7 +25,7 @@ export const Strength = () => {
         </Contents>
         <img src="/strength-1.png" width="50%" />
       </RowWrapper>
-      <RowWrapper>
+      <RowWrapper data-aos="fade-up">
         <img src="/strength-2.png" width="50%" />
         <Contents>
           <CustomizedChip
@@ -44,7 +44,7 @@ export const Strength = () => {
           </Typography>
         </Contents>
       </RowWrapper>
-      <RowWrapper>
+      <RowWrapper data-aos="fade-up">
         <Contents>
           <CustomizedChip
             label="BIM 기반 수량 산출"

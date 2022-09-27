@@ -5,7 +5,7 @@ import { Wrapper } from "./Styles";
 
 export const Ending = () => {
   return (
-    <Wrapper>
+    <Wrapper data-aos="fade-up">
       <Typography
         variant="title36"
         sx={{ color: theme.palette.common.white, textAlign: "center" }}

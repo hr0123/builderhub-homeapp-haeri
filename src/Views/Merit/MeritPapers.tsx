@@ -5,6 +5,7 @@ import { StyledPaper } from "./Styles";
 export const MeritPapers = () => {
   return (
     <Box
+      data-aos="fade-up"
       sx={{
         width: "100%",
         display: "flex",

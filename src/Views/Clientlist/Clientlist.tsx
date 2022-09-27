@@ -16,7 +16,7 @@ export const ClientList = () => {
     cssEase: "linear",
   };
   return (
-    <Wrapper>
+    <Wrapper data-aos="fade-up">
       <Slider {...settings}>
         <div>
           <img src="/client-1.png" width={160} height={80} />

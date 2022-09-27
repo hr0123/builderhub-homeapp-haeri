@@ -4,6 +4,7 @@ import { theme } from "../../Theme/CustomTheme";
 export const MeritMain = () => {
   return (
     <div
+      data-aos="fade-up"
       style={{
         width: "820px",
         alignSelf: "center",
