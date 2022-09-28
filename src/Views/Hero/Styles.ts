@@ -2,12 +2,11 @@ import { styled } from "@mui/material";
 import Image from "next/image";
 
 export const Wrapper = styled("div")(() => ({
-  width: "100vw",
-  padding: "40px",
+  width: "100%",
+  padding: "40px 0",
 }));
 
 export const BoxWrapper = styled("div")(() => ({
-  // width: "1160px",
   width: "100%",
   height: "540px",
   // height: "100%",
@@ -17,14 +16,26 @@ export const BoxWrapper = styled("div")(() => ({
   zIndex: "1",
 }));
 
+export const CarouselWrapper = styled("div")(() => ({
+  width: "100%",
+  height: "100%",
+  position: "absolute",
+  zIndex: "2",
+  borderRadius: "40px",
+}));
+
+export const StyledImage = styled(Image)(() => ({
+  borderRadius: "40px",
+}));
+
 export const LeftWrapper = styled("div")(() => ({
   position: "absolute",
   zIndex: "3",
-  marginTop: "94px",
+  marginTop: "84px",
   marginLeft: "148px",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignItems: "flex-start",
 }));
 
@@ -33,10 +44,4 @@ export const Contents = styled("div")(() => ({
   flexDirection: "column",
   justifyContent: "space-between",
   marginBottom: "100px",
-}));
-
-export const StyledImage = styled(Image)(() => ({
-  width: "100%",
-  height: "100%",
-  // borderRadius: "40px",
 }));

@@ -7,8 +7,8 @@ import { Typography } from "@mui/material";
 
 export const Hero = () => {
   return (
-    <Wrapper>
-      <Container fixed>
+    <Container>
+      <Wrapper>
         <BoxWrapper>
           <HeroCarousel />
           <LeftWrapper>
@@ -23,7 +23,7 @@ export const Hero = () => {
             <HeroButton />
           </LeftWrapper>
         </BoxWrapper>
-      </Container>
-    </Wrapper>
+      </Wrapper>
+    </Container>
   );
 };
