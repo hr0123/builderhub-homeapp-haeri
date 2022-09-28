@@ -11,21 +11,28 @@ export const Wrapper = styled(Container)(() => ({
 }));
 
 export const TopWrapper = styled("div")(() => ({
-  width: "820px",
-  alignSelf: "center",
+  width: "100%",
   position: "relative",
   zIndex: "1",
+}));
+
+export const TopFrame = styled("div")(() => ({
+  width: "100%",
+  position: "absolute",
+  zIndex: "2",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 }));
 
 export const TopContent = styled("div")(() => ({
   width: "100%",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
   alignItems: "center",
+  padding: "77px 190px",
   position: "absolute",
   zIndex: "3",
-  padding: "77px 190px",
 }));
 
 export const MiddleWrapper = styled("div")(() => ({

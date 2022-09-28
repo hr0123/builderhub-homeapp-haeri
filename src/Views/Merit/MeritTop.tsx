@@ -1,14 +1,14 @@
 import { Typography } from "@mui/material";
+import { MeritTopFrame } from "../../Components/MeritTopFrame/MeritTopFrame";
 import { theme } from "../../Theme/CustomTheme";
-import { TopWrapper, TopContent } from "./Styles";
+import { TopWrapper, TopContent, TopFrame } from "./Styles";
 
 export const MeritTop = () => {
   return (
     <TopWrapper data-aos="fade-up">
-      <img
-        src="/merit-main-frame.png"
-        style={{ width: "820px", position: "absolute", zIndex: "2" }}
-      />
+      <TopFrame>
+        <MeritTopFrame />
+      </TopFrame>
       <TopContent>
         <Typography variant="title32">이미 국내 대형 건설사 30곳은</Typography>
         <div

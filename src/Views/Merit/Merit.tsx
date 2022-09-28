@@ -1,7 +1,7 @@
 import { MiddleContent, MiddleWrapper, Wrapper } from "./Styles";
 import { Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
-import { MeritTop } from "./MeritMain";
+import { MeritTop } from "./MeritTop";
 import { MeritPapers } from "./MeritPapers";
 import Image from "next/image";
 
