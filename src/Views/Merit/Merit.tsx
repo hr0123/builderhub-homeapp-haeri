@@ -1,24 +1,15 @@
-import { Wrapper } from "./Styles";
-import { Container, Typography } from "@mui/material";
+import { MiddleContent, MiddleWrapper, Wrapper } from "./Styles";
+import { Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
-import { MeritMain } from "./MeritMain";
+import { MeritTop } from "./MeritMain";
 import { MeritPapers } from "./MeritPapers";
 import Image from "next/image";
 
 export const Merit = () => {
   return (
     <Wrapper>
-      <MeritMain />
-      <div
-        data-aos="fade-up"
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+      <MeritTop />
+      <MiddleWrapper data-aos="fade-up">
         <Typography
           variant="title12"
           sx={{ color: theme.palette.info.main, mt: "92px" }}
@@ -26,14 +17,7 @@ export const Merit = () => {
           &lt; 고객사 DL E&C &gt;
         </Typography>
         <Image src="/client-1.png" alt="clientLogo" width={160} height={80} />
-        <div
-          style={{
-            margin: "52px 0px 52px 0px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <MiddleContent>
           <Typography variant="body24">
             2D 도면 기반 업무를 3D BIM 기술로 대체
           </Typography>
@@ -43,9 +27,9 @@ export const Merit = () => {
           >
             원가관리 혁신 효과
           </Typography>
-        </div>
+        </MiddleContent>
         <MeritPapers />
-      </div>
+      </MiddleWrapper>
     </Wrapper>
   );
 };

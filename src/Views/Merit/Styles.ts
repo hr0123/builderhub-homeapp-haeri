@@ -2,11 +2,44 @@ import { Container, Paper, styled } from "@mui/material";
 
 export const Wrapper = styled(Container)(() => ({
   width: "100%",
-  height: "100vh",
-  padding: "230px 0 180px 0",
+  height: "1300px",
+  padding: "300px 0 100px 0",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  alignItems: "center",
+}));
+
+export const TopWrapper = styled("div")(() => ({
+  width: "820px",
+  alignSelf: "center",
+  position: "relative",
+  zIndex: "1",
+}));
+
+export const TopContent = styled("div")(() => ({
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  position: "absolute",
+  zIndex: "3",
+  padding: "77px 190px",
+}));
+
+export const MiddleWrapper = styled("div")(() => ({
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "center",
+}));
+
+export const MiddleContent = styled("div")(() => ({
+  margin: "52px 0px 52px 0px",
+  display: "flex",
+  flexDirection: "column",
   alignItems: "center",
 }));
 

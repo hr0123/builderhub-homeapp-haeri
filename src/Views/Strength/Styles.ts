@@ -6,7 +6,6 @@ export const Wrapper = styled(Grid)(() => ({
   flexDirection: "column",
   // justifyContent: "space-between",
   alignItems: "center",
-  paddingBottom: "120px",
 }));
 
 export const RowWrapper = styled(Grid)(() => ({

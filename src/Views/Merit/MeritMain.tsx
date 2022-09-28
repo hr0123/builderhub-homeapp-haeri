@@ -1,34 +1,15 @@
 import { Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
+import { TopWrapper, TopContent } from "./Styles";
 
-export const MeritMain = () => {
+export const MeritTop = () => {
   return (
-    <div
-      data-aos="fade-up"
-      style={{
-        width: "820px",
-        alignSelf: "center",
-        position: "relative",
-        zIndex: "1",
-      }}
-    >
+    <TopWrapper data-aos="fade-up">
       <img
         src="/merit-main-frame.png"
         style={{ width: "820px", position: "absolute", zIndex: "2" }}
       />
-
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          position: "absolute",
-          zIndex: "3",
-          padding: "77px 190px",
-        }}
-      >
+      <TopContent>
         <Typography variant="title32">이미 국내 대형 건설사 30곳은</Typography>
         <div
           style={{
@@ -47,7 +28,7 @@ export const MeritMain = () => {
           </Typography>
           <Typography variant="title32">하고 있어요.</Typography>
         </div>
-      </div>
-    </div>
+      </TopContent>
+    </TopWrapper>
   );
 };
