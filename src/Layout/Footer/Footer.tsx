@@ -38,9 +38,7 @@ export const Footer = () => {
         </FooterButton>
       </ButtonWrap>
       <IconWrap>
-        {/* <div style={{ "&:hover": { fill: "red" } }}> */}
         <FooterChang cursor="pointer" />
-        {/* </div> */}
         <FooterYoutube cursor="pointer" />
         <FooterLink cursor="pointer" />
       </IconWrap>

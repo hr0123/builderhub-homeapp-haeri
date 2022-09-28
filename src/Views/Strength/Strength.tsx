@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import Image from "next/image";
 import { Wrapper, RowWrapper, Contents, CustomizedChip } from "./Styles";
 
 export const Strength = () => {
@@ -23,10 +24,12 @@ export const Strength = () => {
             평당이 아닌 부위별로 정확한 수량을 산출합니다.
           </Typography>
         </Contents>
-        <img src="/strength-1.png" width="50%" />
+        {/* <img src="/strength-1.png" width="50%" /> */}
+        <Image src="/strength-1.png" alt="" width={504} height={400} />
       </RowWrapper>
       <RowWrapper data-aos="fade-up">
-        <img src="/strength-2.png" width="50%" />
+        {/* <img src="/strength-2.png" width="50%" /> */}
+        <Image src="/strength-2.png" alt="" width={504} height={400} />
         <Contents>
           <CustomizedChip
             label="합리적인 서비스 비용"
@@ -61,7 +64,8 @@ export const Strength = () => {
             어떤 공간과 부위에 사용되었는지 한 눈에 볼 수 있어요.
           </Typography>
         </Contents>
-        <img src="/strength-3.png" width="50%" />
+        {/* <img src="/strength-3.png" width="50%" /> */}
+        <Image src="/strength-3.png" alt="" width={504} height={400} />
       </RowWrapper>
     </Wrapper>
   );

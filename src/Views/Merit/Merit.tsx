@@ -3,6 +3,7 @@ import { Container, Typography } from "@mui/material";
 import { theme } from "../../Theme/CustomTheme";
 import { MeritMain } from "./MeritMain";
 import { MeritPapers } from "./MeritPapers";
+import Image from "next/image";
 
 export const Merit = () => {
   return (
@@ -24,7 +25,7 @@ export const Merit = () => {
         >
           &lt; 고객사 DL E&C &gt;
         </Typography>
-        <img src="/client-1.png" />
+        <Image src="/client-1.png" alt="clientLogo" width={160} height={80} />
         <div
           style={{
             margin: "52px 0px 52px 0px",

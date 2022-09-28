@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
+import { StyledImage } from "./Styles";
 
 export const HeroCarousel = () => {
   const settings = {
@@ -32,7 +34,7 @@ export const HeroCarousel = () => {
             width="100%"
             height="100%"
             style={{ borderRadius: "40px" }}
-          />
+          />{" "}
         </div>
         <div>
           <img
@@ -40,7 +42,7 @@ export const HeroCarousel = () => {
             width="100%"
             height="100%"
             style={{ borderRadius: "40px" }}
-          />
+          />{" "}
         </div>
         <div>
           <img
@@ -48,7 +50,7 @@ export const HeroCarousel = () => {
             width="100%"
             height="100%"
             style={{ borderRadius: "40px" }}
-          />
+          />{" "}
         </div>
       </Slider>
     </div>

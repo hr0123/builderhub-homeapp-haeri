@@ -21,6 +21,7 @@ export const Contents = styled(Grid)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  padding: "0 48px",
 }));
 
 export const CustomizedChip = styled(Chip)(({ theme }) => ({

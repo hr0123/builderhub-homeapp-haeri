@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Wrapper } from "./Styles";
+import Image from "next/image";
 
 export const ClientList = () => {
   const settings = {
@@ -19,34 +20,34 @@ export const ClientList = () => {
     <Wrapper data-aos="fade-up">
       <Slider {...settings}>
         <div>
-          <img src="/client-1.png" width={160} height={80} />
+          <Image src="/client-1.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-2.png" width={160} height={80} />
+          <Image src="/client-2.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-3.png" width={160} height={80} />
+          <Image src="/client-3.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-4.png" width={160} height={80} />
+          <Image src="/client-4.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-5.png" width={160} height={80} />
+          <Image src="/client-5.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-6.png" width={160} height={80} />
+          <Image src="/client-6.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-7.png" width={160} height={80} />
+          <Image src="/client-7.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-8.png" width={160} height={80} />
+          <Image src="/client-8.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-9.png" width={160} height={80} />
+          <Image src="/client-9.png" alt="client" width={160} height={80} />
         </div>
         <div>
-          <img src="/client-10.png" width={160} height={80} />
+          <Image src="/client-10.png" alt="client" width={160} height={80} />
         </div>
       </Slider>
     </Wrapper>

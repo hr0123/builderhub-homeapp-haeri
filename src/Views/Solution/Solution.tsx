@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import Image from "next/image";
 import { theme } from "../../Theme/CustomTheme";
 import { Wrapper, FadeWrapper, TitleRow } from "./Styles";
 
@@ -26,7 +27,9 @@ export const Solution = () => {
           </Typography>
           <Typography variant="title36">을 제공합니다.</Typography>
         </TitleRow>
-        <img src="/solution-bar.png" style={{ margin: "32px 0 32px 0" }} />
+        <div style={{ margin: "32px 0" }}>
+          <Image src="/solution-bar.png" alt="" width={60} height={8} />
+        </div>
         <Typography variant="body20" sx={{ textAlign: "center" }}>
           이제껏 경험 못 했던 BIM 건축 견적 서비스로
           <br />

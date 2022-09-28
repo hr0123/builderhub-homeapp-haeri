@@ -1,4 +1,5 @@
 import { styled } from "@mui/material";
+import Image from "next/image";
 
 export const Wrapper = styled("div")(() => ({
   width: "100vw",
@@ -32,4 +33,10 @@ export const Contents = styled("div")(() => ({
   flexDirection: "column",
   justifyContent: "space-between",
   marginBottom: "100px",
+}));
+
+export const StyledImage = styled(Image)(() => ({
+  width: "100%",
+  height: "100%",
+  // borderRadius: "40px",
 }));
