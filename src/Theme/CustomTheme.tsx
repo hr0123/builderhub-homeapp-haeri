@@ -27,6 +27,18 @@ declare module "@mui/material/styles" {
     body20: React.CSSProperties;
     body12: React.CSSProperties;
   }
+
+  interface BreakpointOverrides {
+    xs: false; // removes the `xs` breakpoint
+    sm: false;
+    md: false;
+    lg: false;
+    xl: false;
+    mobile: true; // adds the `mobile` breakpoint
+    tablet: true;
+    // laptop: true;
+    desktop: true;
+  }
 }
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -75,8 +87,7 @@ const customPalette = {
 const customTypography = {
   title36: {
     fontStyle: "normal",
-    // fontSize: "36px",
-    fontSize: "2.25rem",
+    fontSize: "36px",
     fontWeight: "700",
   },
   title32: {
@@ -131,9 +142,18 @@ const customTypography = {
   },
 };
 
+const customBreakpoints = {
+  values: {
+    mobile: 22.5,
+    tablet: 48,
+    desktop: 80,
+  },
+};
+
 const options: ThemeOptions = {
   palette: { ...customPalette },
   typography: { ...customTypography },
+  // breakpoints: { ...customBreakpoints },
 };
 
 export const theme = createTheme(options);
