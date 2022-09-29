@@ -1,9 +1,15 @@
-import { styled } from "@mui/material";
+import { Container, styled } from "@mui/material";
 import Image from "next/image";
 
-export const Wrapper = styled("div")(() => ({
-  width: "100%",
-  padding: "40px 0",
+export const Wrapper = styled(Container)(({ theme }) => ({
+  // width: "100%",
+  width: "60rem",
+  [theme.breakpoints.down("desktop")]: {
+    width: "43rem",
+  },
+
+  // padding: "40px 0",
+  margin: "2.5rem",
 }));
 
 export const BoxWrapper = styled("div")(() => ({

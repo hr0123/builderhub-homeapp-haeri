@@ -144,16 +144,16 @@ const customTypography = {
 
 const customBreakpoints = {
   values: {
-    mobile: 22.5,
-    tablet: 48,
-    desktop: 80,
+    mobile: 360,
+    tablet: 768,
+    desktop: 1024,
   },
 };
 
 const options: ThemeOptions = {
   palette: { ...customPalette },
   typography: { ...customTypography },
-  // breakpoints: { ...customBreakpoints },
+  breakpoints: { ...customBreakpoints },
 };
 
 export const theme = createTheme(options);
