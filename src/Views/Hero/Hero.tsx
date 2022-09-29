@@ -15,7 +15,7 @@ export const Hero = () => {
             <Contents>
               <BuilderhubSymbol />
               <Typography variant="body24" sx={{ m: "20px 0px" }}>
-                바뀌는게 당연한 건축?
+                바뀌는 게 당연한 건축?
               </Typography>
               <Typography variant="title36">빌더허브가</Typography>
               <Typography variant="title36">확 바꿔 나갑니다.</Typography>
