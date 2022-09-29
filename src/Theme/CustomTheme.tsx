@@ -36,7 +36,7 @@ declare module "@mui/material/styles" {
     xl: false;
     mobile: true; // adds the `mobile` breakpoint
     tablet: true;
-    // laptop: true;
+    laptop: true;
     desktop: true;
   }
 }
@@ -87,7 +87,11 @@ const customPalette = {
 const customTypography = {
   title36: {
     fontStyle: "normal",
-    fontSize: "36px",
+    // fontSize: "36px",
+    fontSize: "2.25rem",
+    "@media (max-width:1024px)": {
+      fontSize: "1.5rem",
+    },
     fontWeight: "700",
   },
   title32: {
@@ -146,7 +150,8 @@ const customBreakpoints = {
   values: {
     mobile: 360,
     tablet: 768,
-    desktop: 1024,
+    laptop: 1024,
+    desktop: 1200,
   },
 };
 
