@@ -75,7 +75,8 @@ const customPalette = {
 const customTypography = {
   title36: {
     fontStyle: "normal",
-    fontSize: "36px",
+    // fontSize: "36px",
+    fontSize: "2.25rem",
     fontWeight: "700",
   },
   title32: {
