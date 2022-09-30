@@ -9,6 +9,12 @@ const CustomizedButton = styled(Button)(({ theme }) => ({
   height: "74px",
   fontWeight: "700",
   fontSize: "36px",
+  "@media (max-width: 1024px)": {
+    fontSize: "24px",
+  },
+  "@media (max-width: 768px)": {
+    fontSize: "16px",
+  },
   color: "white",
   backgroundColor: theme.palette.primary.main,
   "&:hover": {

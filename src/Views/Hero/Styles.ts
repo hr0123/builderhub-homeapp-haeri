@@ -1,17 +1,17 @@
-import { Box, Container, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import Image from "next/image";
 
-export const Wrapper = styled(Container)(() => ({
+export const Wrapper = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
   width: "100%",
   height: "38.75rem",
-  padding: "2.5rem",
+  padding: "2.5rem 0",
 }));
 
 export const BoxWrapper = styled("div")(({ theme }) => ({
-  // width: "100%",
-  // height: "540px",
+  // width: "50%",
+  // height: "auto",
   [theme.breakpoints.down("tablet")]: {
     width: "20.5rem", //328px
     height: "10.625rem", //170px
@@ -43,9 +43,9 @@ export const StyledImage = styled(Image)(() => ({
   borderRadius: "40px",
 }));
 
-export const LeftWrapper = styled("div")(() => ({
+export const LeftWrapper = styled("div")(({ theme }) => ({
   width: "100%",
-  height: "100%",
+  height: "auto",
   position: "absolute",
   zIndex: "3",
   // marginTop: "84px",
@@ -53,7 +53,7 @@ export const LeftWrapper = styled("div")(() => ({
   padding: "5.125rem",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
+  // justifyContent: "space-between",
   alignItems: "flex-start",
 }));
 
@@ -61,5 +61,6 @@ export const Contents = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  alignItems: "flex-start",
   marginBottom: "100px",
 }));

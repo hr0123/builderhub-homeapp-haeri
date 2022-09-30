@@ -11,7 +11,7 @@ export const Merit = () => {
       <MeritTop />
       <MiddleWrapper data-aos="fade-up">
         <Typography
-          variant="title12"
+          variant="body12"
           sx={{ color: theme.palette.info.main, mt: "92px" }}
         >
           &lt; 고객사 DL E&C &gt;

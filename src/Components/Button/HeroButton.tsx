@@ -5,10 +5,14 @@ import { styled } from "@mui/material/styles";
 import { useRouter } from "next/router";
 
 const CustomizedButton = styled(Button)(({ theme }) => ({
-  width: "294px",
-  height: "58px",
+  // width: "19rem",
+  width: "30%",
+  height: "100%",
   fontWeight: "700",
-  fontSize: "24px",
+  fontSize: "1.5rem",
+  "@media (max-width: 1024px)": {
+    fontSize: "1rem",
+  },
   color: "white",
   backgroundColor: theme.palette.primary.main,
   "&:hover": {
@@ -16,6 +20,7 @@ const CustomizedButton = styled(Button)(({ theme }) => ({
   },
   borderRadius: "50px",
   border: "none",
+  marginTop: "6.25rem",
 }));
 
 export const HeroButton = () => {
@@ -24,7 +29,9 @@ export const HeroButton = () => {
     <CustomizedButton
       variant="contained"
       endIcon={
-        <KeyboardDoubleArrowRightIcon sx={{ width: "35px", height: "40px" }} />
+        <KeyboardDoubleArrowRightIcon
+          sx={{ width: "2.5rem", height: "2.5rem" }}
+        />
       }
       onClick={() => router.push("https://customer.dev.builderhub.io")}
     >

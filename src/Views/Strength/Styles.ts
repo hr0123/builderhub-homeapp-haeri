@@ -27,6 +27,12 @@ export const CustomizedChip = styled(Chip)(({ theme }) => ({
   height: "36px",
   padding: "4px 15px 4px 15px",
   fontSize: "20px",
+  "@media (max-width: 1024px)": {
+    fontSize: "16px",
+  },
+  "@media (max-width: 768px)": {
+    fontSize: "12px",
+  },
   fontWeight: "700",
   color: theme.palette.text.secondary,
   backgroundColor: theme.palette.secondary.main,

@@ -87,31 +87,57 @@ const customPalette = {
 const customTypography = {
   title36: {
     fontStyle: "normal",
-    // fontSize: "36px",
     fontSize: "2.25rem",
-    "@media (max-width:1024px)": {
+    "@media (max-width: 1024px)": {
       fontSize: "1.5rem",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "1.125rem",
     },
     fontWeight: "700",
   },
   title32: {
     fontStyle: "normal",
     fontSize: "32px",
+    "@media (max-width: 1024px)": {
+      fontSize: "1.5rem",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "1.125rem",
+    },
     fontWeight: "700",
   },
   title28: {
     fontStyle: "normal",
     fontSize: "28px",
+    "@media (max-width: 1024px)": {
+      fontSize: "20px",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "16px",
+    },
     fontWeight: "700",
   },
   title24: {
     fontStyle: "normal",
     fontSize: "24px",
+    "@media (max-width: 1024px)": {
+      fontSize: "20px",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "12px",
+    },
     fontWeight: "700",
   },
   title20: {
     fontStyle: "normal",
     fontSize: "20px",
+    "@media (max-width: 1024px)": {
+      fontSize: "16px",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "12px",
+    },
     fontWeight: "700",
   },
   title15: {
@@ -127,21 +153,42 @@ const customTypography = {
   body28: {
     fontStyle: "normal",
     fontSize: "28px",
+    "@media (max-width: 1024px)": {
+      fontSize: "16px",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "14px",
+    },
     fontWeight: "400",
   },
   body24: {
     fontStyle: "normal",
     fontSize: "24px",
+    "@media (max-width: 1024px)": {
+      fontSize: "1rem",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "0.75rem",
+    },
     fontWeight: "400",
   },
   body20: {
     fontStyle: "normal",
     fontSize: "20px",
+    "@media (max-width: 1024px)": {
+      fontSize: "16px",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "14px",
+    },
     fontWeight: "400",
   },
   body12: {
     fontStyle: "normal",
     fontSize: "12px",
+    "@media (max-width: 768px)": {
+      fontSize: "8px",
+    },
     fontWeight: "400",
   },
 };
@@ -162,5 +209,3 @@ const options: ThemeOptions = {
 };
 
 export const theme = createTheme(options);
-
-// export default theme;
